@@ -3,14 +3,29 @@ class Solution {
     int majorityElement(vector<int>& arr) {
         // code here
         int n = arr.size();
-        
-        unordered_map<int, int>res;
-        
-        for(int num : arr)
-        {
-            res[num]++;
-            if(res[num] > n/2) return num;
+    int count = 0, candidate = -1;
+
+    // 1st pass: find potential candidate
+    for(int i = 0; i < n; i++) {
+        if(count == 0) {
+            candidate = arr[i];
+            count = 1;
         }
-        return -1;
+        else if(arr[i] == candidate)
+            count++;
+        else
+            count--;
+    }
+
+    // 2nd pass: confirm candidate
+    count = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] == candidate)
+            count++;
+    }
+
+    if(count > n / 2)
+        return candidate;
+    return -1;
     }
 };
