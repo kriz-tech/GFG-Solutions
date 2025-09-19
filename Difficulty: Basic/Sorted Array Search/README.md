@@ -1,4 +1,4 @@
-<h2><a href="https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1?page=4&sortBy=submissions">Sorted Array Search</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given an array, <strong>arr[] </strong>sorted in ascending order and an integer <strong>k</strong>. Return true if k is present in the array, otherwise, false.</span></p>
+<h2><a href="https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1">Sorted Array Search</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given an array, <strong>arr[] </strong>sorted in ascending order and an integer <strong>k</strong>. Return true if k is present in the array, otherwise, false.</span></p>
 <p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
 <pre><span style="font-size: 14pt;"><strong>Input: </strong>arr[] = [1, 2, 3, 4, 6], k = 6
 <strong>Output: </strong>true<strong>
